@@ -1,4 +1,4 @@
-MapReduce的整体流程
+## MapReduce的整体流程
 
 1. 分片、格式化
 
@@ -38,7 +38,7 @@ MapReduce的整体流程
 
    将ReduceTask生成的<key,value>传入OutputFormat的write方法，实现文件的写入操作
 
-MapReduce的Shuffle过程
+## MapReduce的Shuffle过程
 
 1. MapTask收集map()方法输出的kv对，调用Partitioner进行分区，放到内存缓冲区
 2. 从内存缓冲区溢出本地磁盘文件
